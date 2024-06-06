@@ -3,35 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>appleflyer</title>
+  <title>appleflyer's portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div class="tilt-card"> 
-    <div class="card">
-      <div class="banner">
-        <div class="profile-pic"></div>
-      </div>
-      <div class="content">
-        <h2>appleflyer</h2>
-        <p>hi! im appleflyer. welcome to my scuffed portfolio. more to work on soon.</p>
-        <p>i know python, js, css, html. still learning c++</p>
-        <p>my links to github and whatever are below</p>
-        <div class="buttons">
-          <!--bro do NOT ask why the code for 5 buttons are so damn long-->
-          <a href="https://github.com/appleflyerv3" class="btn" target="_blank" data-toggle="tooltip" data-placement="top" title="Github"><i class="fab fa-github"></i></a>
-          <a href="https://discord.com/users/1209096766075703368" class="btn" target="_blank" data-toggle="tooltip" data-placement="top" title="Discord"><i class="fab fa-discord"></i></a>
-          <a href="https://appleflyers-blog.vercel.app" class="btn" target="_blank" data-toggle="tooltip" data-placement="top" title="Blog"><i class="fas fa-feather"></i></a>
-          <a href="https://appleflyers-filehost.vercel.app" class="btn" target="_blank" data-toggle="tooltip" data-placement="top" title="Filehost"><i class="fas fa-cloud-arrow-up"></i></a>
-          <a href="https://bromine35.netlify.app" class="btn" target="_blank" data-toggle="tooltip" data-placement="top" title="Bromine35"><i class="fas fa-flask-vial"></i></a>
+  <div class="carousel">
+    <div class="card-container">
+      <div class="card active">
+        <div class="banner">
+          <div class="profile-pic"></div>
+        </div>
+        <div class="content">
+          <h2>appleflyer</h2>
+          <p>hi! im appleflyer. welcome to my scuffed portfolio. more to work on soon.</p>
+          <p>i know python, js, css, html. still learning c++</p>
+          <p>my links to github and whatever are below</p>
+          <div class="buttons">
+            <a href="https://github.com/appleflyerv3" class="btn" target="_blank" data-toggle="tooltip" data-placement="top" title="Github"><i class="fab fa-github"></i></a>
+            <a href="https://discord.com/users/1209096766075703368" class="btn" target="_blank" data-toggle="tooltip" data-placement="top" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://appleflyers-blog.vercel.app" class="btn" target="_blank" data-toggle="tooltip" data-placement="top" title="Blog"><i class="fas fa-feather"></i></a>
+            <a href="https://appleflyers-filehost.vercel.app" class="btn" target="_blank" data-toggle="tooltip" data-placement="top" title="Filehost"><i class="fas fa-cloud-arrow-up"></i></a>
+            <a href="https://bromine35.netlify.app" class="btn" target="_blank" data-toggle="tooltip" data-placement="top" title="Bromine35"><i class="fas fa-flask-vial"></i></a>
+          </div>
         </div>
       </div>
-    </div>  
+      <div class="card">
+        <div class="content">
+          <h2>Projects/Stuff</h2>
+          <h5>ive worked on a few projects and also have a few useful things on this site.</h5>
+          <br>
+          <h5>brtube made with my blood</h5>
+          <h5>BrTube: <a href="https://bromineyt.netlify.app" target="_blank" data-toggle="tooltip" data-placement="top" title="bromineyt page">link</a></h5>
+          <br>
+          <h5>simple crack for all jetbrain IDEs (this is not mine)</h5>
+          <h5>JetBrain IDEs crack: <a href="https://appleflyers-filehost.vercel.app/intellj_crack" target="_blank" data-toggle="tooltip" data-placement="top" title="intellj crack files">link</a></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="controls">
+    <button class="prev-btn"></button>
+    <button class="next-btn"></button>
   </div>
   <canvas id="sparkleCanvas" style="position: fixed; top: 0; left: 0; z-index: -1;"></canvas>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

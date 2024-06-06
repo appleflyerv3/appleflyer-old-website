@@ -26,3 +26,35 @@ setTimeout(() => {
   
   }, 100);  
 
+  const cardContainer = document.querySelector('.card-container');
+  const cards = document.querySelectorAll('.card');
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+  
+  let currentIndex = 0;
+  
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    updateCarousel();
+  });
+  
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    updateCarousel();
+  });
+  
+  function updateCarousel() {
+    cards.forEach((card, index) => {
+      card.classList.remove('active');
+      if (index === currentIndex) {
+        card.classList.add('active');
+      }
+    });
+  
+    const containerWidth = cardContainer.offsetWidth;
+    const cardWidth = cards[0].offsetWidth;
+    const offset = -(currentIndex * (cardWidth + 300)) + (containerWidth - cardWidth) / 2;
+    cardContainer.style.transform = `translateX(${offset}px)`;
+  }
+  
+  updateCarousel();
